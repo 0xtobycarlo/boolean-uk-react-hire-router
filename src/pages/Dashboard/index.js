@@ -4,8 +4,6 @@ import PeopleList from "./components/PeopleList";
 function Dashboard({ hiredPeople }) {
   const [people, setPeople] = useState([]);
 
-  console.log("Looking here: ", people);
-
   useEffect(() => {
     fetch("https://randomuser.me/api?results=50")
       .then((res) => res.json())
